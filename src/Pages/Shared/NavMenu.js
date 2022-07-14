@@ -3,13 +3,13 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './NavMenu.css';
 
 function NavMenu() {
   const navigate = useNavigate();
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" className='sticky-top'>
       <Container fluid>
         <Navbar.Brand onClick={() => navigate('/')} className="nav_logo fs-3">FakeShop</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -19,8 +19,8 @@ function NavMenu() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="products">Products</Nav.Link>
+            <Link to="/">Home</Link>
+            <Link to="products">Products</Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control

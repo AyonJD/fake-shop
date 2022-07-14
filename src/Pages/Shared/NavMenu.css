@@ -2,3 +2,10 @@
     cursor: pointer;
     font-family: 'Lobster', cursive;
 }
+
+.navbar-nav a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: black;
+    font-weight: 500;
+}

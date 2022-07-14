@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import SingleProductCard from '../SingleProductCard/SingleProductCard';
 import './Products.css';
 
 const Products = () => {
@@ -7,12 +8,17 @@ const Products = () => {
     useEffect(() => {
         fetch('https://fakestoreapi.com/products')
             .then(res => res.json())
-            .then(data => setProducts(data)); 
+            .then(data => setProducts(data));
     }, []);
 
+    console.log(products);
     return (
-        <div >
-            
+        <div className='container'>
+            <div className="row">
+                    {
+                        products.map(product => <SingleProductCard key={product.id} product={product} />)
+                    }
+            </div>
         </div>
     );
 };

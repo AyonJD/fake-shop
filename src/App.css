@@ -1,2 +1,6 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body{
+    background-color: #f0f0f0 !important;
+}
