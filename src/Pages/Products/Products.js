@@ -11,7 +11,7 @@ const Products = () => {
             .then(data => setProducts(data));
     }, []);
 
-    console.log(products);
+    // console.log(products);
     return (
         <div className='container'>
             <div className="row">

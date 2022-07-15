@@ -1,9 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import HandleRating from '../HandleRating/HandleRating';
 import './SingleProductCard.css';
 
 const SingleProductCard = ({ product }) => {
     const { category, description, id, image, price, title, rating } = product;
+    const navigate = useNavigate();
     return (
         <div className="col-md-4 col-sm-6 col-12 mb-4">
             <div className="card-group">
@@ -19,7 +21,7 @@ const SingleProductCard = ({ product }) => {
                                 <small className='text-muted fw-bold'>({rating?.count})</small>
                             </div>
                         </div>
-                        <button className='btn btn-outline-dark btn-sm mt-3'>Explore Product</button>
+                        <button onClick={() => navigate(`/products/${id}`)} className='btn btn-outline-dark btn-sm mt-3'>Explore Product</button>
                     </div>
                 </div>
             </div>
