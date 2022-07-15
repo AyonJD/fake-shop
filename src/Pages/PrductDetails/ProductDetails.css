@@ -91,19 +91,17 @@ img {
     flex-direction: column;
 }
 
-.colors {
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-}
-
 .product-title,
 .price,
 .sizes,
 .colors {
     text-transform: UPPERCASE;
     font-weight: bold;
+}
+
+.size,
+.color{
+    cursor: pointer;
 }
 
 .checked,
@@ -136,8 +134,8 @@ img {
     display: inline-block;
     vertical-align: middle;
     margin-right: 10px;
-    height: 2em;
-    width: 2em;
+    height: 1em;
+    width: 1em;
     border-radius: 2px;
 }
 
