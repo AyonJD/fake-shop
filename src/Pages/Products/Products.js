@@ -17,6 +17,8 @@ const Products = () => {
             });
     }, []);
 
+    const reversedProductsArr = [...products].reverse();
+
     return (
         <>
             {
@@ -24,7 +26,7 @@ const Products = () => {
                     <div className='container'>
                         <div className="row">
                             {
-                                products.map(product => <SingleProductCard key={product.id} product={product} />)
+                                reversedProductsArr?.map(product => <SingleProductCard key={product.id} product={product} />)
                             }
                         </div>
                     </div>

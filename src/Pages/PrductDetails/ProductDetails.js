@@ -26,40 +26,40 @@ const ProductDetails = () => {
         <>
             {
                 spinner ? <Spinner /> :
-                    <div class="container">
-                        <div class="card my-5 px-3 py-5">
-                            <div class="container-fliud">
-                                <div class="wrapper row">
-                                    <div class="col-md-6 text-center">
+                    <div className="container">
+                        <div className="card my-5 px-3 py-5">
+                            <div className="container-fliud">
+                                <div className="wrapper row">
+                                    <div className="col-md-6 text-center">
                                         <img className='w-75' src={product?.image} alt="" />
                                     </div>
 
 
-                                    <div class="details col-md-6">
-                                        <h3 class="product-title">{title}</h3>
+                                    <div className="details col-md-6">
+                                        <h3 className="product-title">{title}</h3>
                                         <div className="d-flex align-items-center">
                                             <HandleRating rating={rating?.rate} />
                                             <div className="ml-auto">
                                                 <small className='text-muted fw-bold'>({rating?.count} reviews)</small>
                                             </div>
                                         </div>
-                                        <p class="product-description card_description">{description}</p>
-                                        <h4 class="price">price: <span>${price}</span></h4>
-                                        <p class="vote"><strong>{percentage}%</strong> of buyers enjoyed this product! <strong>({rating?.count} votes)</strong></p>
-                                        <h5 class="sizes">sizes:
-                                            <span class="size" data-toggle="tooltip" title="small">s</span>
-                                            <span class="size" data-toggle="tooltip" title="medium">m</span>
-                                            <span class="size" data-toggle="tooltip" title="large">l</span>
-                                            <span class="size" data-toggle="tooltip" title="xtra large">xl</span>
+                                        <p className="product-description card_description">{description}</p>
+                                        <h4 className="price">price: <span>${price}</span></h4>
+                                        <p className="vote"><strong>{percentage}%</strong> of buyers enjoyed this product! <strong>({rating?.count} votes)</strong></p>
+                                        <h5 className="sizes">sizes:
+                                            <span className="size" data-toggle="tooltip" title="small">s</span>
+                                            <span className="size" data-toggle="tooltip" title="medium">m</span>
+                                            <span className="size" data-toggle="tooltip" title="large">l</span>
+                                            <span className="size" data-toggle="tooltip" title="xtra large">xl</span>
                                         </h5>
-                                        <h5 class="colors">colors:
-                                            <span class="color orange not-available" data-toggle="tooltip" title="Not In store"></span>
-                                            <span class="color green"></span>
-                                            <span class="color blue"></span>
+                                        <h5 className="colors">colors:
+                                            <span className="color orange not-available" data-toggle="tooltip" title="Not In store"></span>
+                                            <span className="color green"></span>
+                                            <span className="color blue"></span>
                                         </h5>
-                                        <div class="">
-                                            <button class="add-to-cart btn btn-default primary-bg" type="button">add to cart</button>
-                                            <button class="like ms-2 btn btn-default" type="button"><AiFillHeart /></button>
+                                        <div className="mt-3">
+                                            <button className="add-to-cart btn btn-default primary-bg" type="button">add to cart</button>
+                                            <button className="like ms-2 btn btn-default" type="button"><AiFillHeart /></button>
 
 
                                         </div>

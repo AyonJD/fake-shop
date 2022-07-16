@@ -8,14 +8,40 @@
     line-height: 1.6;
 }
 
-/* .column_width{
-    width: 19.333333%;
-} */
-
 .single_card_title_height{
     height: 40px;
+    cursor: pointer;
 }
 
 .rating_count{
     font-size: 12px;
+}
+
+.explore_button{
+    transform: translateY(36px);
+    visibility: hidden;
+    opacity: 0;
+    transition: transform .8s ease-in-out;
+    padding: 5px 9px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.explore_button:hover{
+    background-color: #b71c1c;
+    color: #fff;
+}
+
+.product_card_group:hover .explore_button{
+    transform: translateY(-180px) rotate(360deg);
+    visibility: visible;
+    opacity: 1;
+}
+
+.product_card_body{
+    height: 133px;
+}
+
+.explore_icon{
+    margin-top: -5px;
 }

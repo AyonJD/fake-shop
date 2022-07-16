@@ -3,8 +3,8 @@ import './Spinner.css'
 
 const Spinner = () => {
     return (
-        <div class="loader text-center">
-            <span class="loader_span"></span>
+        <div className="loader text-center">
+            <span className="loader_span"></span>
         </div>
     )
 }
