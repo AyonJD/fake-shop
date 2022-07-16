@@ -26,16 +26,16 @@ const ProductDetails = () => {
         <>
             {
                 spinner ? <Spinner /> :
-                    <div className="container">
+                    <div className="container mt-4">
                         <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><Link to="/">Home</Link></li>
-                                <li class="breadcrumb-item " aria-current="page">Products</li>
-                                <li class="breadcrumb-item" aria-current="page">{ category}</li>
-                                <li class="breadcrumb-item" aria-current="page">{ `${title?.split(" ")[0]} ${title?.split(" ")[1]}`}</li>
+                            <ol className="breadcrumb">
+                                <li className="breadcrumb-item"><Link to="/">Home</Link></li>
+                                <li className="breadcrumb-item " aria-current="page">Products</li>
+                                <li className="breadcrumb-item" aria-current="page">{category}</li>
+                                <li className="breadcrumb-item" aria-current="page">{`${title?.split(" ")[0]} ${title?.split(" ")[1]}`}</li>
                             </ol>
                         </nav>
-                        <div className="card my-5 px-3 py-5">
+                        <div className="card my-2 px-3 py-4">
                             <div className="container-fliud">
                                 <div className="wrapper row">
                                     <div className="col-md-6 text-center">

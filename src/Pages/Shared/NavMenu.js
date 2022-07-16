@@ -18,9 +18,9 @@ function NavMenu() {
     setSearchData(data)
     reset();
   };
-  
+
   return (
-    <Navbar bg="light" expand="lg" className='sticky-top'>
+    <Navbar bg="light" expand="lg" className='sticky-top shadow-sm'>
       <Container fluid>
         <Navbar.Brand onClick={() => navigate('/')} className="nav_logo fs-3">FakeShop</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -41,7 +41,7 @@ function NavMenu() {
               aria-label="Search"
               {...register("inputValue", { required: true })}
             />
-            <Button variant="outline-success" type='submit'>Search</Button>
+            <Button className='add-to-cart btn btn-default primary-bg' type='submit'>Search</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
