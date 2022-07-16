@@ -1,7 +1,7 @@
 import { AiFillHeart } from 'react-icons/ai';
 import React, { useEffect, useState } from 'react';
 import './ProductDetails.css';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import HandleRating from '../HandleRating/HandleRating';
 import Spinner from '../Spinner/Spinner';
 
@@ -27,16 +27,25 @@ const ProductDetails = () => {
             {
                 spinner ? <Spinner /> :
                     <div className="container">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><Link to="/">Home</Link></li>
+                                <li class="breadcrumb-item " aria-current="page">Products</li>
+                                <li class="breadcrumb-item" aria-current="page">{ category}</li>
+                                <li class="breadcrumb-item" aria-current="page">{ `${title?.split(" ")[0]} ${title?.split(" ")[1]}`}</li>
+                            </ol>
+                        </nav>
                         <div className="card my-5 px-3 py-5">
                             <div className="container-fliud">
                                 <div className="wrapper row">
                                     <div className="col-md-6 text-center">
-                                        <img className='w-75' src={product?.image} alt="" />
+                                        <img className='w-75' src={image} alt="" />
                                     </div>
 
 
                                     <div className="details col-md-6">
                                         <h3 className="product-title">{title}</h3>
+                                        <div className="vote">Category: {category}</div>
                                         <div className="d-flex align-items-center">
                                             <HandleRating rating={rating?.rate} />
                                             <div className="ml-auto">
