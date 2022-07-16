@@ -1,9 +1,21 @@
 .card-img-top {
     /* object-fit: cover !important; */
-    height: 300px;
+    height: 178px;
 }
 
 .card_description{
     color: gray;
     line-height: 1.6;
+}
+
+/* .column_width{
+    width: 19.333333%;
+} */
+
+.single_card_title_height{
+    height: 40px;
+}
+
+.rating_count{
+    font-size: 12px;
 }

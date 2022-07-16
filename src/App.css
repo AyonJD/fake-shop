@@ -4,3 +4,11 @@
 body{
     background-color: #f0f0f0 !important;
 }
+
+.primary-bg{
+    background: #0F172A !important;
+}
+
+.primary-text{
+    color: #0F172A !important;
+}

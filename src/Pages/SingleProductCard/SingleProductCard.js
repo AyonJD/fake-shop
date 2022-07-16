@@ -7,18 +7,18 @@ const SingleProductCard = ({ product }) => {
     const { category, description, id, image, price, title, rating } = product;
     const navigate = useNavigate();
     return (
-        <div className="col-md-4 col-sm-6 col-12 mb-4">
+        <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
             <div className="card-group">
                 <div className="card pt-3">
                     <img src={image} className="card-img-top" alt="..." />
                     <div className="card-body">
-                        <h5 className="" title={title}>{title.slice(0, 25)}{title.length > 25 && '...'}</h5>
-                        <p className="card_description" title={description}>{description.slice(0, 60)}...</p>
+                        <h6 className="single_card_title_height" title={title}>{title.slice(0, 20)}{title.length > 20 && '...'}</h6>
+                        {/* <p className="card_description" title={description}>{description.slice(0, 60)}...</p> */}
                         <h5>${price}</h5>
                         <div className="d-flex align-items-center">
                             <HandleRating rating={rating?.rate} />
-                            <div className="ml-auto">
-                                <small className='text-muted fw-bold'>({rating?.count})</small>
+                            <div className="ml-1">
+                                <small className='rating_count text-muted fw-bold'>({rating?.count})</small>
                             </div>
                         </div>
                         <button onClick={() => navigate(`/products/${id}`)} className='btn btn-outline-dark btn-sm mt-3'>Explore Product</button>

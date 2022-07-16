@@ -21,7 +21,7 @@ const ProductDetails = () => {
             })
     }, [id]);
 
-    let percentage = (rating?.rate / 5) * 100;
+    let percentage = parseFloat(parseInt(rating?.rate) / 5) * 100;
     return (
         <>
             {
@@ -58,7 +58,7 @@ const ProductDetails = () => {
                                             <span class="color blue"></span>
                                         </h5>
                                         <div class="">
-                                            <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                                            <button class="add-to-cart btn btn-default primary-bg" type="button">add to cart</button>
                                             <button class="like ms-2 btn btn-default" type="button"><AiFillHeart /></button>
 
 
