@@ -37,7 +37,7 @@ const Products = () => {
     // console.log(filteredProducts, 'filteredProducts', reversedProductsArr, 'reversedProductsArr');
 
     return (
-        <>
+        <div className='min_height'>
             {
                 spinner ? <Spinner /> :
                     <div className='container'>
@@ -50,7 +50,7 @@ const Products = () => {
                         </div>
                     </div>
             }
-        </>
+        </div>
     );
 };
 

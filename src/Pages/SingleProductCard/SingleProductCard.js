@@ -9,7 +9,7 @@ const SingleProductCard = ({ product }) => {
     const { category, description, id, image, price, title, rating } = product;
     const navigate = useNavigate();
     return (
-        <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+        <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-5">
             <div className="card-group product_card_group">
                 <div className="card pt-3">
                     <img src={image} className="card-img-top" alt="..." />

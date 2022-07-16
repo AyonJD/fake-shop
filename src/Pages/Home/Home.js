@@ -5,7 +5,7 @@ import './Home.css';
 const Home = () => {
 
     return (
-        <div>
+        <div className='min_height'>
             <Products/>
         </div>
     );
