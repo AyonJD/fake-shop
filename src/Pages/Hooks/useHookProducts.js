@@ -1,15 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const useHookProducts = () => {
     const [hookProducts, setHookProducts] = useState([]);
+    const [spinner, setSpinner] = useState(false);
 
-    fetch('https://fakestoreapi.com/products')
+
+    useEffect(() => {
+        setSpinner(true);
+        fetch('https://fakestoreapi.com/products')
         .then(res => res.json())
         .then(data => {
             setHookProducts(data);
+            setSpinner(false);
         });
+    }, []);
     
-    return [hookProducts];
+    return [hookProducts, spinner];
 };
 
 export default useHookProducts;
