@@ -45,24 +45,22 @@ const Home = () => {
                     <>
                         <Carousel className='carousel'>
                             <Carousel.Item>
-                                <img
+                                <div
                                     onClick={() => navigate('/products')}
-                                    className="d-block carousel"
-                                    src={bannerOne}
-                                    alt="First slide"
-                                />
+                                    className="carousel slide_one"
+                                >
+                                </div>
                                 <Carousel.Caption>
                                     <h3>First slide label</h3>
                                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
+                            <div
                                     onClick={() => navigate('/products')}
-                                    className="d-block carousel"
-                                    src={bannerTwo}
-                                    alt="Third slide"
-                                />
+                                    className="carousel slide_two"
+                                >
+                                </div>
 
                                 <Carousel.Caption>
                                     <h3>Second slide label</h3>
@@ -70,12 +68,11 @@ const Home = () => {
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
+                            <div
                                     onClick={() => navigate('/products')}
-                                    className="d-block carousel"
-                                    src={bannerThree}
-                                    alt="Third slide"
-                                />
+                                    className="carousel slide_three"
+                                >
+                                </div>
 
                                 <Carousel.Caption>
                                     <h3>Third slide label</h3>
@@ -85,12 +82,11 @@ const Home = () => {
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
+                            <div
                                     onClick={() => navigate('/products')}
-                                    className="d-block carousel"
-                                    src={bannerFour}
-                                    alt="Third slide"
-                                />
+                                    className="carousel slide_four"
+                                >
+                                </div>
 
                                 <Carousel.Caption>
                                     <h3>Fourth slide label</h3>

@@ -1,7 +1,35 @@
-.carousel{
+.carousel {
     height: 70vh;
     width: calc(99vw - 3px) !important;
 }
-.carousel img{
+
+.carousel img {
     cursor: pointer;
+}
+
+
+.slide_one {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url(../../Assets/bannerOne.jpg);
+}
+
+.slide_two {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url(../../Assets/bannerTwo.jpg);
+}
+
+.slide_three {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url(../../Assets/bannerThree.jpg);
+}
+
+.slide_four {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url(../../Assets/bannerFour.jpg);
+    
+}
+
+.slide_one,
+.slide_two,
+.slide_three,
+.slide_four {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

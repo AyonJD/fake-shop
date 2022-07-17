@@ -23,7 +23,7 @@ const ProductDetails = () => {
 
     let percentage = parseFloat(parseInt(rating?.rate) / 5) * 100;
     return (
-        <>
+        <div className='min_height'>
             {
                 spinner ? <Spinner /> :
                     <div className="container mt-4">
@@ -53,19 +53,19 @@ const ProductDetails = () => {
                                             </div>
                                         </div>
                                         <p className="product-description card_description">{description}</p>
-                                        <h4 className="price">price: <span>${price}</span></h4>
+                                        <h5 className="price">price: <span>${price}</span></h5>
                                         <p className="vote"><strong>{percentage}%</strong> of buyers enjoyed this product! <strong>({rating?.count} votes)</strong></p>
-                                        <h5 className="sizes">sizes:
+                                        <h6 className="sizes">sizes:
                                             <span className="size" data-toggle="tooltip" title="small">s</span>
                                             <span className="size" data-toggle="tooltip" title="medium">m</span>
                                             <span className="size" data-toggle="tooltip" title="large">l</span>
                                             <span className="size" data-toggle="tooltip" title="xtra large">xl</span>
-                                        </h5>
-                                        <h5 className="colors">colors:
+                                        </h6>
+                                        <h6 className="colors">colors:
                                             <span className="color orange not-available" data-toggle="tooltip" title="Not In store"></span>
                                             <span className="color green"></span>
                                             <span className="color blue"></span>
-                                        </h5>
+                                        </h6>
                                         <div className="mt-3">
                                             <button className="add-to-cart btn btn-default primary-bg" type="button">add to cart</button>
                                             <button className="like ms-2 btn btn-default" type="button"><AiFillHeart /></button>
@@ -78,7 +78,7 @@ const ProductDetails = () => {
                         </div>
                     </div>
             }
-        </>
+        </div>
     );
 };
 

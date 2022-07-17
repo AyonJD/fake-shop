@@ -104,7 +104,7 @@ img {
 
 .checked,
 .price span {
-    color: #ff9f1a;
+    color: rgb(255, 30, 0);
 }
 
 .product-title,

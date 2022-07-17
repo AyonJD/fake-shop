@@ -11,6 +11,7 @@
 .single_card_title_height{
     height: 40px;
     cursor: pointer;
+    color: #360772;
 }
 
 .rating_count{
