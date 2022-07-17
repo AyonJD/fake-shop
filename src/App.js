@@ -7,6 +7,7 @@ import ProductDetails from './Pages/PrductDetails/ProductDetails';
 import { createContext, useState } from 'react';
 import Home from './Pages/Home/Home';
 import Footer from './Pages/Shared/Footer';
+import { Toaster } from 'react-hot-toast';
 
 const SearchContext = createContext();
 function App() {
@@ -22,6 +23,7 @@ function App() {
         </Routes>
         <Footer />
       </SearchContext.Provider>
+      <Toaster />
     </div>
   );
 }

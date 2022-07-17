@@ -4,6 +4,7 @@ import HandleRating from '../HandleRating/HandleRating';
 import './SingleProductCard.css';
 import { BsArrowsMove } from 'react-icons/bs';
 import { AiFillHeart } from 'react-icons/ai';
+import toast from 'react-hot-toast';
 
 const SingleProductCard = ({ product }) => {
     const { category, description, id, image, price, title, rating } = product;
@@ -25,7 +26,7 @@ const SingleProductCard = ({ product }) => {
                         </div>
                         <div className="d-flex justify-content-evenly align-items-denter">
                             <button onClick={() => navigate(`/products/${id}`)} className='btn explore_button'><BsArrowsMove className='explore_icon' /></button>
-                            <button className='btn explore_button'><AiFillHeart className='explore_icon' /></button>
+                            <button onClick={() => { toast.success('Product added to wishlist') }} className='btn explore_button'><AiFillHeart className='explore_icon' /></button>
                         </div>
                     </div>
                 </div>

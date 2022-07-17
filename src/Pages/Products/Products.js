@@ -44,7 +44,7 @@ const Products = () => {
                         <h3 className='mt-4'>Flash sell</h3>
                         <div className="row">
                             {
-                                filteredProducts && filteredProducts.length >= 1 ? filteredProducts?.map(product => <SingleProductCard key={product.id} product={product} />)
+                                filteredProducts.length > 0 ? filteredProducts?.map(product => <SingleProductCard key={product.id} product={product} />)
                                     : reversedProductsArr?.map(product => <SingleProductCard key={product.id} product={product} />)
                             }
                         </div>

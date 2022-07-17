@@ -11,7 +11,7 @@ const Footer = () => {
             <div class="container pt-3">
                 <div class="row text-center text-xs-center text-sm-left text-md-left">
                     <div class="col-xs-12 col-sm-4 col-md-4">
-                        <h5>Quick links</h5>
+                        <h5 className='footer_left_border'>Quick links</h5>
                         <ul class="list-unstyled quick-links">
                             <li><a href="https://github.com/AyonJD"><i class="fa fa-angle-double-right"></i>Home</a></li>
                             <li><a href="https://github.com/AyonJD"><i class="fa fa-angle-double-right"></i>About</a></li>
@@ -21,7 +21,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4">
-                        <h5>Quick links</h5>
+                        <h5 className='footer_middle_border'>Quick links</h5>
                         <ul class="list-unstyled quick-links">
                             <li><a href="https://github.com/AyonJD"><i class="fa fa-angle-double-right"></i>Home</a></li>
                             <li><a href="https://github.com/AyonJD"><i class="fa fa-angle-double-right"></i>About</a></li>
@@ -31,7 +31,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4">
-                        <h5>Quick links</h5>
+                        <h5 className='footer_right_border'>Quick links</h5>
                         <ul class="list-unstyled quick-links">
                             <li><a href="https://github.com/AyonJD"><i class="fa fa-angle-double-right"></i>Home</a></li>
                             <li><a href="https://github.com/AyonJD"><i class="fa fa-angle-double-right"></i>About</a></li>

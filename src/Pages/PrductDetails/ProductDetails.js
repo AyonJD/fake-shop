@@ -4,6 +4,7 @@ import './ProductDetails.css';
 import { Link, useParams } from 'react-router-dom';
 import HandleRating from '../HandleRating/HandleRating';
 import Spinner from '../Spinner/Spinner';
+import toast from 'react-hot-toast';
 
 const ProductDetails = () => {
     const { id } = useParams();
@@ -67,8 +68,8 @@ const ProductDetails = () => {
                                             <span className="color blue"></span>
                                         </h6>
                                         <div className="mt-3">
-                                            <button className="add-to-cart btn btn-default primary-bg" type="button">add to cart</button>
-                                            <button className="like ms-2 btn btn-default" type="button"><AiFillHeart /></button>
+                                            <button onClick={() => { toast.success('Product added to cart') }} className="add-to-cart btn btn-default primary-bg" type="button">add to cart</button>
+                                            <button onClick={() => { toast.success('Product added to wishlist') }} className="like ms-2 btn btn-default" type="button"><AiFillHeart /></button>
 
 
                                         </div>
