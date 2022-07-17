@@ -5,10 +5,6 @@ import useHookProducts from '../Hooks/useHookProducts';
 import Spinner from '../Spinner/Spinner';
 import { SearchContext } from '../../App';
 import SingleProductCard from '../SingleProductCard/SingleProductCard';
-import bannerOne from '../../Assets/bannerOne.jpg'
-import bannerTwo from '../../Assets/bannerTwo.jpg'
-import bannerThree from '../../Assets/bannerThree.jpg'
-import bannerFour from '../../Assets/bannerFour.jpg'
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
